@@ -18,7 +18,7 @@
 }
   /* fin-anim  */
   /* debut-anim slideInDown */
-  .slideInDown-header {
+  /* .slideInDown-header {
     -webkit-animation-name: slideInDown;
     animation-name: slideInDown;
     animation-delay: 0.5s;
@@ -140,10 +140,10 @@
           -webkit-transform: translateY(0);
           transform: translateY(0);
           }
-          } 
+          }  */
   /* fin-anim slideInDown */
 /* deb- nim lds-roller */
-.lds-roller {
+/* .lds-roller {
     display: flex;
     position:absolute;
     width:100% ;
@@ -236,5 +236,6 @@
   @keyframes loading {
       100% { top: -600px;
       }
-  }
+  } */
   /* fin-anim lds-roller */
+  

@@ -4,6 +4,7 @@
     margin:0;
     padding: 0;
     list-style-type:none;
+    box-sizing: border-box;
 }
 html {
     font-size: 17px; 
@@ -11,6 +12,8 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     background: #fff;
+    width: 100%;
+    overflow-x: hidden
 }
 h1, h2, h3, h4,p {
     font-family: 'Raleway', sans-serif;
@@ -20,7 +23,7 @@ h1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    margin-bottom: 10px;
+    margin-top: 63px;
 }
 h2 {
     font-size: 22px;
@@ -30,7 +33,7 @@ h3 {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
 }
 h4 {
     font-size: 18px;
@@ -40,7 +43,8 @@ h4 {
 p {
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 16px;  
+    margin-bottom: 6px;
 }
 a {
     color: #000;
@@ -49,31 +53,50 @@ a {
 a:hover {   
     color: #000;
 }
+
 header {
     position: relative;
+    width: auto;
     z-index: 200;
-}
-header section {
-    margin: 10px;
 }
 header div {
     position: relative;
-    margin: 20px 0;
+    justify-content: space-between;
+    align-content: center;
 }
 header img {
     width: 61px;
     height: 19px;
+    margin-top: 44px;
+    /* margin-left: 5px; */
  }
-header a {
-    color: #000;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    padding: 22px 10px;
+
+header nav {
+    position: relative;
+    margin-top: 44px;
+    margin-right: 100px;
 }
-header a:hover {   
-    color:   #0065FC;
+header ul {
+    position: relative;
+    justify-content: space-between;
+}
+
+header a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* padding-top: 42px; */
+    margin-right: 50px;
+    padding: 42px 20px 0px 20px
+}
+header a:hover {
+    font-weight: 500;
+    color: #0065FC;
+    padding: 42px 20px 0px 20px;
+    /* padding-top: 42px; */
     border-top: 2px solid #0065FC;
-    padding: 20px 10px;
+    font-size: 16px;
+    line-height: 19px;
     cursor: pointer;
 }
 img {
@@ -81,24 +104,26 @@ img {
     height: auto
 }
 form {
+    position: relative;
     border: 1px solid #fff;
     border-radius: 15px;
-    width: 373px;
-    background:#F2F2F2;
+    width: 332px;
+    background: #F2F2F2;
     font-size: 16px;
     height: 49px;
-    margin: 15px 0
+    margin-top: 20px;
 }
-
+label {
+    display: none;
+  }
 input[type=search] {
     border: 1px solid #fff;
-    background: #fff;
-    cursor:pointer ;
-    padding: 18px;
-    font-size: 18px;  
-    color: #000;
+    cursor:pointer ; 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 }
-
 input[type=submit] {
     border: none;
     background: #0065FC;
@@ -108,7 +133,17 @@ input[type=submit] {
     border-radius: 0 15px 15px 0;
     font-size: 18px;
 }
-
+header p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+header section p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 8px ;
+}
 /* class */
 .icon::before {
     display: inline-block;
@@ -116,10 +151,6 @@ input[type=submit] {
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-  }
-label {
-    display: none;
-    margin-right: 36px;
   }
 .locat::before {
     font-family: "Font Awesome 5 Brands";
@@ -145,30 +176,37 @@ label {
     color: #0065FC;
     position: relative;
     padding: 5px;
+    bottom: 3px;
+    margin-right: 11px;
+    margin-left: 9px;
+    /* left: 5px; */
 }
 .econimic::before {
     font-family: "Font Awesome 5 Brands";
     font: var(--fa-font-solid);
     content: "\f53a";
+    width: 22px;
+    height: 16px;
     color:#0065FC;
     font-weight: 900;
     position: relative;
-    padding: 5px;
 }
 .family::before {
     font-family: "Font Awesome 5 Brands";content: "\f183";color: #0065FC;
     font-weight: 900;
+    width: 13px;
+    height: 22px;
     font: var(--fa-font-solid);
     position: relative;
-    padding: 5px;
 } 
 .romantic::before {
     font-family: "Font Awesome 5 Brands";
     content: "\f004";
     color: #0065FC;
+    width: 22px;
+    height: 18px;
     font: var(--fa-font-solid);
     position: relative;
-    padding: 5px;
 }
 .animal::before {
     font-family: "Font Awesome 5 Brands";
@@ -176,7 +214,8 @@ label {
     color:#0065FC;
     font: var(--fa-font-solid);
     position: relative;
-    padding: 5px;
+    width: 22px;
+    height: 22px;
 }
 .star::before {
     font-family: "Font Awesome 5 Brands";
@@ -199,8 +238,9 @@ label {
     color:#0065FC;
     font: var(--fa-font-solid);
     position: relative;
-    padding: 5px;
-    margin-left: 50px;
+    /* padding: 5px; */
+    margin-left: 100px;
+
 }    
 .lign-hor {
     display: flex;
@@ -209,27 +249,27 @@ label {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding: 15px 0px;
+    align-content: center;
+    margin-top: 32px;
+    width: 100%;
 }
-.marg{
-    position: relative;
-    margin: 0px 0px 10px 23px;
-}
-.align-vert{
+
+.align-vert {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-    /* left: 15px; */
+    left: 15px;
     width: 169px; 
-    margin: 0 15px;
+}
+.align-vert-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    margin: 0px 10px 0px 15px;
 }
 
-/* .para {
-    font-size: 14px;
-    line-height: 16px;
-    margin: 5px 0;
-} */
 .box-shadow {
     box-shadow: 0px 0px 10px -3px rgb(0 0 0 / 67%);
     -webkit-box-shadow: 0px 0px 10px -3px rgb(0 0 0 / 67%);
@@ -239,39 +279,35 @@ label {
  /* structure */
  #content {
     position: relative;
-    max-width: 1400px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 50px;
 }
- #primary-nav {
-    width:100%;
-    top:0;
-    left: 0; 
-    width: 100%;
-    background: #fff;
- }
- #primary-nav ul {
-    justify-content: flex-end;
-    align-items: start;
-    height: 0px;
- }
- 
- #primary-nav li {
-    position: relative;
-    margin: -22px 53px 0px 13px;
- }
  
  #filter {
-    margin: 10px 0 10px 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+ }
+ #filter h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
  }
  #filter ul {
     justify-content: space-around;
-    width: 830px;
-    margin-left: 15px;
+    width: 60%; 
+    margin-left: 25px;
+    
  }
-
+ filter span {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+ }
  #filter li {
-    border: 1px solid #000;
+    border: 2px solid #F2F2F2;
     border-radius: 20px;
     padding: 10px 15px;
  }
@@ -279,23 +315,41 @@ label {
     background: #deebff;
     cursor: pointer;
  }
- #filter i {
-    margin: 0 10px;
- }
+main {
+    position: relative;
+    display: block;
+    width: 100%;
+}
  
  #hosting {
     position: relative;
-    width: 820px;
+    width: 864px;
+    height: 625px;
     background: #F2F2F2;
-    border: 15px #FFF solid;
+    border: 1px #FFF solid;
     border-radius: 50px;
-    padding: 0px 10px 10px 20px;
+    padding: 10px 0px 30px 28px;
+    margin-right: 40px;
+}
+#hosting h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 23px;
+}
+#hosting h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* margin-top: 10px; */
 }
 #hosting article {
     background: #fff;
     border: 1px solid #fff;
     border-radius: 20px;
-    margin: 10px 15px 15px 0px;
+    width: 246px;
+    height: 199px;
+    margin: 0px 20px 30px 0px;
 }
 #hosting img {
     border: 5px solid #fff;
@@ -304,12 +358,19 @@ label {
     height: 124px;
     object-fit: cover;
 }
- #popular {
-    width: 405px;
+#popular {
+    width: 400px;
     background: #F2F2F2;
     border-radius: 50px;
-    border: 15px #FFF solid;
-    padding: 0 0px 0px 20px;
+    height: 625px;
+    border: 1px #FFF solid;
+    padding: 10px 0px 30px 28px;
+}
+#popular h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 23px;
 }
 #popular article {
     background: #fff;
@@ -324,19 +385,29 @@ label {
     position: relative;
     border-radius: 20px 0 0 20px;
     width: 137px;
-    height: 144px;
+    height: 132px;
     object-fit: cover;
 }
  #activities {
     position: relative;
-    padding: 10px;
+    width: 100%;
 }
+#activities h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 #activities article {
-    margin-right: 32px;
+    margin-right: 33px;
+    margin-bottom: 60px;
 }
 
 #activities article div {
     border-radius: 20px;
+    object-fit: cover; 
 }
 #activities article img {
     border-radius: 20px 20px 0 0;
@@ -347,16 +418,38 @@ label {
 
  #propos {
     position: relative;
-    top: 80px;
-    margin: 0 10px;
-    padding: 15px;
+    /* top: 40px; */
+    margin-right: 100px;
     background:#F2F2F2;
+}
+#propos h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    margin-top: 44px;
 }
 #propos nav {
     justify-content: space-around;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 #propos li {
-    margin: 10px 0;
+    position: relative;
+    margin-bottom: 12px;
 }
+#propos li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 19px;
+}
+#propos li a:hover {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer; 
+    color: #0065FC;
+}
+
+
  
