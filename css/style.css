@@ -279,7 +279,7 @@ header section p {
  /* structure */
  #content {
     position: relative;
-    max-width: 1440px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 50px;
 }
@@ -323,7 +323,7 @@ main {
  
  #hosting {
     position: relative;
-    width: 864px;
+    width: 880px;
     height: 625px;
     background: #F2F2F2;
     border: 1px #FFF solid;
@@ -359,7 +359,7 @@ main {
     object-fit: cover;
 }
 #popular {
-    width: 400px;
+    width: 420px;
     background: #F2F2F2;
     border-radius: 50px;
     height: 625px;
@@ -401,7 +401,7 @@ main {
 }
 
 #activities article {
-    margin-right: 33px;
+    margin-right: 43px;
     margin-bottom: 60px;
 }
 
@@ -419,7 +419,7 @@ main {
  #propos {
     position: relative;
     /* top: 40px; */
-    margin-right: 100px;
+    margin-right: 58px;
     background:#F2F2F2;
 }
 #propos h3 {
