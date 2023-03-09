@@ -152,11 +152,14 @@ header button {
   margin: 10px 0px 0 0;
   border: 1px solid #fff;
 }
+.lign-vert {
+  display: none;
+}
 header p {
   font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    padding: 17px 22px 17px 55px;
+    padding: 17px 10px 10px 0px;
 }
 header section p {
   ont-weight: 400;
@@ -172,7 +175,10 @@ header section p {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
+.align-hor {
+  display: flex;
+  margin: 0 0 0 15px;
+}
 
 .icon::before {
   display: inline-block;
@@ -278,7 +284,6 @@ header section p {
   font-size: 24px;
   padding: 12px 20px 11px 20px;
   background: #0065FC;
-  border: 2px solid #fff;
   border-radius: 0 15px 15px 0;
 }  
 .lign-wrap {
@@ -437,9 +442,9 @@ header section p {
 #activities {
   position: relative;
   order: 2;
-  position: relative;
+  /* position: relative;
   width: 100%;
-  margin-left: 50px;
+  margin-left: 50px; */
 }
 #activities div {
   position: relative;
@@ -456,7 +461,7 @@ header section p {
 }
 
 #activities article {
-  margin-right: 32px;
+  /* margin-right: 32px; */
   margin-bottom: 68px;
   width: 334px;
   height: 190px;
